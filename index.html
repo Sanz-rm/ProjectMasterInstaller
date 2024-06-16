@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectMaster - Aplicación de Gestión de Tareas y Proyectos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(215, 230, 250);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #f0f8ff; /* Color más claro para el contenedor */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 35%; /* Tamaño del logo ajustado */
+            height: auto;
+        }
+        .description {
+            text-align: center; /* Centrar el texto de la descripción */
+            margin-bottom: 20px;
+        }
+        .btn-download {
+            display: block;
+            width: 200px; /* Ancho del botón */
+            margin: 0 auto; /* Centrar el botón */
+        }
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .member-card {
+            flex: 1 1 300px;
+        }
+        .card-img-top {
+            border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
+            overflow: hidden; /* Para asegurar que la imagen se ajuste al círculo */
+            width: 150px; /* Tamaño de la imagen */
+            height: 150px; /* Tamaño de la imagen */
+            object-fit: cover; /* Para mantener la relación de aspecto */
+            margin: 0 auto; /* Centrar la imagen */
+            display: block; /* Hacer que sea un bloque para aplicar márgenes */
+        }
+        .card-img-top:hover {
+            opacity: 0.8; /* Reducir la opacidad al pasar el ratón para indicar que es clickable */
+            cursor: pointer; /* Cambiar el cursor al puntero */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="recursos/logo.png" alt="Logo de ProjectMaster">
+        </div>
+        <div class="description">
+            <p>ProjectMaster es una aplicación de gestión de tareas y proyectos diseñada para facilitar la organización y seguimiento de proyectos complejos. Es una herramienta imprescindible para equipos que buscan aumentar su productividad y eficiencia en la gestión de proyectos.</p>
+            <a href="recursos/setup.exe" class="btn btn-primary btn-download">Descargar instalador</a>
+        </div>
+        <div class="mt-5">
+            <h2 class="text-center mb-4" style="font-family: 'Myanmar Text', sans-serif; color: rgb(150, 180, 210);">Integrantes del Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <a href="https://github.com/Sanz-rm" target="_blank">
+                            <img src="https://github.com/Sanz-rm.png" class="card-img-top" alt="Manuel Sanz">
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Manuel Sanz</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <a href="https://github.com/EstherEstu" target="_blank">
+                            <img src="https://github.com/EstherMorely.png" class="card-img-top" alt="Esther Morely">
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Esther Morely</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <a href="https://github.com/blanchiripi" target="_blank">
+                            <img src="https://github.com/blanchiripi.png" class="card-img-top" alt="Blanca Nuñez">
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Blanca Núñez</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
